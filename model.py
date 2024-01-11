@@ -42,9 +42,9 @@ def preprocess_data(file_path):
 
 # Initialization of the model
 def init_model():
-    file_path = './data/phrases2.txt'  # Assuming the file is in the 'data' directory
+    file_path = './data/phrases2.txt' 
     processed_data = preprocess_data(file_path)
-    ngram_model = NgramModel(n=2)  # Using bigrams (2-grams)
+    ngram_model = NgramModel(n=3)
     ngram_model.build_model(processed_data)
     return ngram_model
 
